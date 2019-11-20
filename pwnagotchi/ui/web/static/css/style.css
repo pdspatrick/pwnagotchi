@@ -1,42 +1,34 @@
-.block {
-    -webkit-appearance: button;
-    -moz-appearance: button;
-    appearance: button;
-
-    display: block;
-    cursor: pointer;
-    text-align: center;
-}
-
-img#ui {
-    width:100%;
-}
-
-.full {
-    position: absolute;
-    top:0;
-    left:0;
-    width:100%;
+.ui-image {
+    width: 100%;
 }
 
 .pixelated {
-  image-rendering:optimizeSpeed;             /* Legal fallback */
-  image-rendering:-moz-crisp-edges;          /* Firefox        */
-  image-rendering:-o-crisp-edges;            /* Opera          */
-  image-rendering:-webkit-optimize-contrast; /* Safari         */
-  image-rendering:optimize-contrast;         /* CSS3 Proposed  */
-  image-rendering:crisp-edges;               /* CSS4 Proposed  */
-  image-rendering:pixelated;                 /* CSS4 Proposed  */
-  -ms-interpolation-mode:nearest-neighbor;   /* IE8+           */
+    image-rendering: optimizeSpeed; /* Legal fallback */
+    image-rendering: -moz-crisp-edges; /* Firefox        */
+    image-rendering: -o-crisp-edges; /* Opera          */
+    image-rendering: -webkit-optimize-contrast; /* Safari         */
+    image-rendering: optimize-contrast; /* CSS3 Proposed  */
+    image-rendering: crisp-edges; /* CSS4 Proposed  */
+    image-rendering: pixelated; /* CSS4 Proposed  */
+    -ms-interpolation-mode: nearest-neighbor; /* IE8+           */
 }
 
-form.action {
-    display:inline;
+.image-wrapper {
+    flex: 1;
+    position: relative;
 }
 
 div.status {
     position: absolute;
-    top:0;
-    left:0;
-    width:100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+a.read {
+    color: #777 !important;
+}
+
+p.messagebody {
+    padding: 1em;
 }
